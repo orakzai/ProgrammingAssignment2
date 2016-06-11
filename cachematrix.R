@@ -1,6 +1,7 @@
 ## Provides functions for custom matrix which caches the inverse of a matrix upon first calculation
 
-## Creates a cache based matrix which can cache a single value for the matrix 
+## Creates a special matrix which can cache a single value for the matrix, also provides the setter and 
+## for the special matrix
 
 makeCacheMatrix <- function(x = matrix()) {
     v <- NULL
@@ -18,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Finds the inverse of the special matrix and cache its value using cache functions of the special matrix
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
